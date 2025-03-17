@@ -1,0 +1,10 @@
+com\example\createPlugin\CratePlaceholderExpansion.class
+com\example\createPlugin\CrateCommand.class
+com\example\createPlugin\SQLiteManager.class
+com\example\createPlugin\AnimationManager.class
+com\example\createPlugin\CreatePlugin.class
+com\example\createPlugin\Reward.class
+com\example\createPlugin\CrateListener.class
+com\example\createPlugin\Crate.class
+com\example\createPlugin\CrateManager.class
+com\example\createPlugin\Animation.class

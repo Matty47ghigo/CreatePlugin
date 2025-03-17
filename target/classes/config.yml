@@ -1,0 +1,38 @@
+crates:
+  legendary:
+    name: "&6&lLEGENDARY CRATE"
+    hologram:
+      enabled: true
+      text:
+        - "&e&lLEGENDARY CRATE"
+        - "&7Apri per ottenere premi fantastici!"
+    rewards:
+      - item: DIAMOND_BLOCK
+        amount: 1
+        chance: 0.1
+      - item: GOLD_INGOT
+        amount: 5
+        chance: 0.5
+    animations:
+      type: "PARTICLE_CIRCLE"
+      particle: "REDSTONE"
+      color: "FF0000"
+      size: 2.0
+    guaranteed_rewards:
+      - opens_required: 30
+        reward:
+          item: DIAMOND_BLOCK
+          amount: 10
+
+keys:
+  virtual:
+    enabled: true
+    database:
+      type: "SQLite"
+      path: "database.db"
+  physical:
+    item:
+      material: TRIPWIRE_HOOK
+      name: "&a&lCRATE KEY"
+      lore:
+        - "&7Usa questa chiave per aprire una crate."

@@ -1,0 +1,55 @@
+name: CrateSystem
+version: '1.0.0'
+main: com.example.createPlugin.CreatePlugin
+api-version: '1.21'
+description: Un sistema di crate con animazioni, hologrammi e chiavi.
+author: Matty47ghigo
+
+commands:
+  createcrate:
+    description: Crea una nuova crate.
+    usage: /createcrate <nome>
+    permission: cratesystem.create
+  open:
+    description: Apre una crate.
+    usage: /open <nome>
+    permission: cratesystem.open
+  givekey:
+    description: Assegna una chiave a un giocatore.
+    usage: /givekey <giocatore> <nome_crate>
+    permission: cratesystem.givekey
+  leaderboard:
+    description: Mostra la classifica delle crate.
+    usage: /leaderboard
+    permission: cratesystem.leaderboard
+  reloadcrates:
+    description: Ricarica le crate dal file di configurazione.
+    usage: /reloadcrates
+    permission: cratesystem.reload
+  setcrate:
+    description: Imposta una crate cliccando su uno Shulker Box.
+    usage: /setcrate <nome>
+    permission: cratesystem.setcrate
+
+permissions:
+  cratesystem.*:
+    description: Permessi completi per il plugin.
+    default: op
+  cratesystem.create:
+    description: Permette di creare nuove crate.
+    default: op
+  cratesystem.open:
+    description: Permette di aprire crate.
+    default: true
+  cratesystem.givekey:
+    description: Permette di assegnare chiavi.
+    default: op
+  cratesystem.leaderboard:
+    description: Permette di visualizzare la classifica.
+    default: true
+  cratesystem.reload:
+    description: Permette di ricaricare le crate.
+    default: op
+  cratesystem.setcrate:
+    description: Permette di impostare una crate.
+    default: op
